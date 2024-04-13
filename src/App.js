@@ -54,10 +54,6 @@ const App = () => {
           path="/personalized-list"
           element={user ? <PersonalizedList /> : <Navigate to="/personalized" />}
         />
-        <Route
-          path="/strava"
-          element={user ? <StravaConnection /> : <Navigate to="/personalized" />}
-        />
       </Routes>
     </Router>
   );
