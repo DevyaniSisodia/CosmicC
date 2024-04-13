@@ -1,6 +1,6 @@
 .private-dashboard {
     position: relative;
-    background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm FullStack\cosmic_calm\src\images\background.jpeg') no-repeat center center fixed;
+    background: url('../images/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: 85vh;
     display: flex;

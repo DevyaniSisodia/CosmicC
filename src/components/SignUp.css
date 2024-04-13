@@ -2,7 +2,7 @@
 
 .signup {
     position: relative;
-    background: url('C:\\Users\\Harsh Bhat\\OneDrive\\Desktop\\Cosmic Calm\\cosmic_calm\\cosmic_calm_frontend\\src\\images\\background.jpeg') no-repeat center center fixed;
+    background: url('../images/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: 84vh;
     display: flex;

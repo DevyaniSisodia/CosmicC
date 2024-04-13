@@ -1,7 +1,7 @@
 .private-analysis {
   overflow: hidden;
   margin-top: 0;
-  background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm FullStack\cosmic_calm\src\images\background.jpeg') no-repeat center center fixed;
+  background: url('../images/background.jpeg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   height: 400vh;
@@ -102,7 +102,7 @@ a {
 
 .home {
   position: relative;
-  background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm\cosmic_calm\cosmic_calm_frontend\src\images\background.jpeg') no-repeat center center fixed;
+  background: url('../images/background.jpeg') no-repeat center center fixed;
   background-size: cover;
   height: 85vh;
   display: flex;
