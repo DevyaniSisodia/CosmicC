@@ -18,7 +18,7 @@ import { auth } from './firebase';
 import StatsPage from './privateComponents/StatsPage';
 import Personalized from './privateComponents/Personalized';
 import PersonalizedList from './privateComponents/PersonalizedList'
-import StravaConnection from './privateComponents/StravaConnection'
+
 
 const App = () => {
   const [user] = useAuthState(auth);
