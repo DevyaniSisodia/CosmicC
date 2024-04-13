@@ -1,0 +1,82 @@
+/* StatsPage.css */
+.stats {
+  overflow: hidden;
+}
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53vh;
+    position: relative;
+    background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm FullStack\cosmic_calm\src\images\background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Overlay styling */
+  .stats-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)); /* Orange transparent gradient */
+    z-index: 1;
+  }
+  
+  .stats-card {
+    font-weight: bolder;
+    background: transparent; /* Transparent background */
+    box-shadow: 0 0 0 2px orange, 0 12px 24px rgba(0, 0, 0, 0.3); /* Orange border with shadow */
+    border-radius: 40px; /* Increased border radius for a more rounded look */
+    padding: 30px; /* Padding for a larger card */
+    width: 600px; /* Increased width */
+    position: relative;
+    z-index: 2;
+    text-align: center; /* Center align text */
+  }
+  
+  
+  .stats-card h2 {
+    background: linear-gradient(to right, #ff7927, #ffcc7e); /* Gradient for text color */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    color: transparent; /* Make text transparent */
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 25px; /* Increased font size */
+  }
+  
+  .stats-content {
+    display: flex; /* Make the content flex container */
+    justify-content: space-between; /* Distribute space between flex items */
+  }
+  
+  .stats-content p {
+    background: linear-gradient(to right, #ff7927, #ffcc7e); /* Gradient for text color */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    color: transparent; /* Make text transparent */
+    margin: 20px 0; /* Margin for paragraphs */
+    font-size: 22px; /* Increased font size */
+    text-align: center; /* Center align text */
+  }
+  
+  .heatmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    position: relative;
+    background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm FullStack\cosmic_calm\src\images\background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Overlay styling */
+  .heatmap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)); /* Orange transparent gradient */
+    z-index: 1;
+  }

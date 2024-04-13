@@ -1,0 +1,128 @@
+.private-analysis {
+  overflow: hidden;
+  margin-top: 0;
+  background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm FullStack\cosmic_calm\src\images\background.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  height: 400vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Overlay styling */
+.private-analysis::before {
+  overflow: hidden;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 417%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.73));
+  z-index: 1;
+}
+
+.private-analysis ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px;
+  position: absolute;
+  top: 41%;
+  font-weight: bold;
+  list-style: none;
+  color: #e5a97e;
+  z-index: 2;
+  width: 70%;
+}
+
+.private-analysis li {
+  font-size: large;
+  padding: 10px;
+  border: 1px solid #e5a97e;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.private-analysis li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+.private-analysis input {
+  z-index: 2;
+}
+
+.search {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.search input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #e5a97e;
+  padding: 10px;
+  color: white;
+  width: 250px;
+  font-size: 16px;
+  transition: border-bottom 0.3s ease;
+}
+
+.search input::placeholder {
+  color: #e5a97e;
+}
+
+.search button {
+  border: none;
+  background-color: transparent;
+  color: #e5a97e;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search input:focus {
+  border-bottom: 2px solid white;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the parent element's color (or you can set a specific color) */
+    cursor: pointer; /* Change cursor to pointer on hover, similar to the default behavior */
+    outline: none;
+}
+
+
+.home {
+  position: relative;
+  background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm\cosmic_calm\cosmic_calm_frontend\src\images\background.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  z-index: 2;
+}
+
+/* Overlay styling */
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63)); 
+  z-index: 1; 
+}

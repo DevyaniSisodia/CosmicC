@@ -1,0 +1,66 @@
+/* PrivateNavigation.css */
+
+.private-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .private-nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  
+  .private-nav-item {
+    margin: 0 100px; /* Increase the margin value to adjust the space between elements */
+    font-weight: lighter;
+  }
+  
+  .private-nav-item a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 200;
+  }
+  
+  .private-nav-item a.button {
+    padding: 15px;
+    background: linear-gradient(to right, #e66910, #f59551);
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .private-nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm\cosmic_calm\cosmic_calm_frontend\src\images\background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 2;
+  }
+  
+  .private-nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63));
+    z-index: 2;
+  }
+  

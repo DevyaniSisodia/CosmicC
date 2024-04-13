@@ -1,0 +1,39 @@
+/* Heatmap styles */
+.heatmap-container {
+  background: linear-gradient(to right, #ff7927, #ffcc7e);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative; /* Set to relative for absolute positioning */
+  z-index: 1;
+  text-align: center;
+}
+
+/* Color scales */
+.color-none {
+  fill: #1e2024;
+}
+
+.color-scale-1 {
+  fill: #ffda91;
+}
+
+.color-scale-2 {
+  fill: #f49a2d;
+}
+
+.color-scale-3 {
+  fill: #ff6600;
+}
+
+.heatmap-container svg {
+  width: 140vh;
+  position: absolute; /* Set to absolute */
+  left: 50%; /* Move to the center horizontally */
+  top: 50%; /* Move to the center vertically */
+  transform: translate(-50%, -50%); /* Center the SVG element */
+}

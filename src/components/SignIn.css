@@ -1,0 +1,92 @@
+/* SignIn.css */
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.signin {
+    position: relative;
+    background: url('C:\\Users\\Harsh Bhat\\OneDrive\\Desktop\\Cosmic Calm\\cosmic_calm\\cosmic_calm_frontend\\src\\images\\background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: "League Spartan", sans-serif; /* Replace with your desired font */
+  }
+  
+  .signin::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .signin form {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    width: 100%;
+    padding: 40px; /* Increase the padding to make the form container longer */
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signin input {
+    outline: none;
+    width: 100%;
+    padding: 20px; /* Increase the padding for equal-sized input fields */
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+  }
+  
+  .signin button {
+    background-color: #e66910;
+    color: #fff;
+    padding: 20px; /* Make the button length same as input fields */
+    width: 100%; /* Make the button width 100% */
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 2;
+  }
+  
+  .signin button:hover {
+    background-color: #f59551;
+    transition: background-color 0.3s;
+  }
+  
+  .signin p {
+    z-index: 2;
+    margin-top: 20px;
+  }
+  
+  .signin a {
+    color: #f59551;
+    text-decoration: none;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline;
+  }
+  
+  .signin h2 {
+    z-index: 2;
+  }
+  

@@ -1,0 +1,147 @@
+/* SliderForm styles */
+.slider-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  position: relative;
+  background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm FullStack\cosmic_calm\src\images\background.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ff7927;
+}
+
+.slider-form::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)); /* Orange transparent gradient */
+  z-index: 1;
+}
+
+.card {
+  background-color: #2b2e33;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  background-color: #ff7927;
+  color: #1e2024;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+button:hover {
+  background-color: #ff9642;
+}
+
+button.selected {
+  background-color: #ff9642;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.slider-form button {
+  background-color: #ff7927;
+  color: #1e2024;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-form button:hover {
+  background-color: #ff9642;
+}
+
+.slider-form button.selected {
+  background-color: #ff9642;
+}
+
+.navigation-buttons button {
+  background-color: #1e2024;
+  color: #ff7927;
+  font-weight: bold;
+  padding: 12px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation-buttons button:hover {
+  background-color: #ff7927;
+  color: #1e2024;
+}
+
+.navigation-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.radio-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.radio-label input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.radio-label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff7927; /* Border color */
+  border-radius: 50%;
+  background-color: #2b2e33; /* Unchecked background color */
+  transition: background-color 0.3s;
+}
+
+.radio-label:hover::before {
+  background-color: #1e2024; /* Hover background color */
+}
+
+.radio-label input:checked +::before {
+  background-color: #ff7927; /* Checked background color */
+  border: 2px solid #ff7927; /* Border color for checked state */
+}

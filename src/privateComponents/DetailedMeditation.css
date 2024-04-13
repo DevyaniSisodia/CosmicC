@@ -1,0 +1,65 @@
+/* DetailedMeditation.css */
+body {
+    background-color: #fdd7bd;
+}
+.meditation-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #ffddc5, #ef6f0d);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-section {
+    width: 50%;
+    padding-right: 20px;
+  }
+  
+  .right-section {
+    width: 50%;
+  }
+  
+  .meditation-card h2 {
+    color: #010101;
+    font-size: 24px;
+  }
+  
+  .meditation-card p {
+    color: #0a0a0a;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .meditation-card img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .meditation-card audio {
+    width: 100%;
+    margin-top: 20px;
+    background-color: linear-gradient(to right, #f7957c, #feb47b);
+    border-radius: 8px;
+  }
+  
+  .mark-as-complete-button {
+    margin-top: 30px;
+    font-family: "League Spartan", sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7323;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .mark-as-complete-button:hover {
+    background-color: #ffa560;
+  }

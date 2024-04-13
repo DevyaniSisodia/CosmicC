@@ -1,0 +1,124 @@
+.private-dashboard {
+    position: relative;
+    background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm FullStack\cosmic_calm\src\images\background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+}
+
+/* Overlay styling */
+.private-dashboard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63));
+    z-index: 1;
+}
+
+.private-dashboard h2 {
+    font-size: 28px;
+    color: #fff;
+    z-index: 2;
+}
+
+.private-dashboard p {
+    font-size: 16px;
+    color: #eee;
+    z-index: 2;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.private-dashboard button {
+    .private-dashboard {
+    position: relative;
+    background: url('C:\Users\Harsh Bhat\OneDrive\Desktop\Cosmic Calm\cosmic_calm\cosmic_calm_frontend\src\images\background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+}
+
+/* Overlay styling */
+.private-dashboard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.63));
+    z-index: 1;
+}
+
+.private-dashboard h2 {
+    font-size: 28px;
+    color: #fff;
+    z-index: 2;
+}
+
+.private-dashboard p {
+    font-size: 16px;
+    color: #eee;
+    z-index: 2;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.private-dashboard button {
+    font-family: "League Spartan";
+    background-color: #e66910;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 0; /* Adjusted padding */
+    width: 400px; /* Set a fixed width */
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.private-dashboard button:hover {
+    background-color: #f59551;
+}
+
+    background-color: #e66910;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 0; /* Adjusted padding */
+    width: 400px; /* Set a fixed width */
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.private-dashboard button:hover {
+    background-color: #f59551;
+}

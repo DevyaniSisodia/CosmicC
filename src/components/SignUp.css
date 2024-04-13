@@ -1,0 +1,79 @@
+/* SignUp.css */
+
+.signup {
+    position: relative;
+    background: url('C:\\Users\\Harsh Bhat\\OneDrive\\Desktop\\Cosmic Calm\\cosmic_calm\\cosmic_calm_frontend\\src\\images\\background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: "League Spartan", sans-serif; /* Replace with your desired font */
+  }
+  
+  .signup::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha (4th value) for transparency */
+    z-index: 1; /* Set a higher z-index value for the overlay */
+  }
+  
+  .signup form {
+    position: relative;
+    z-index: 2; /* Set a lower z-index value for the form */
+    max-width: 400px;
+    width: 100%;
+    padding: 40px; /* Adjust the padding to make the form container even bigger */
+    background: rgba(0, 0, 0, 0.7); /* Adjust background color for form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: Add a subtle box shadow */
+    display: flex;
+    flex-direction: column; /* Center the form fields vertically */
+    align-items: center; /* Center the form fields horizontally */
+  }
+  
+  .signup input {
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); /* Input background color */
+    color: white;
+    font-size: 16px;
+  }
+  
+  .signup h2 {
+    z-index: 2;
+  }
+  
+  .signup button {
+    background-color: #e66910;
+    color: #fff;
+    padding: 15px;
+    width: 100%; /* Make the button width 100% to match the form fields */
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 2;
+  }
+  
+  .signup button:hover {
+    background-color: #f59551;
+    transition: background-color 0.3s;
+  }
+  
+.signup a {
+    color: #e66910;
+    margin-top: 15px;
+}
