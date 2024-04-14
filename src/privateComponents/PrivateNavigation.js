@@ -19,13 +19,13 @@ const PrivateNavigation = () => {
           <Link to="/analysis">Meditate</Link>
         </li>
         <li className="private-nav-item">
-          <Link to="/sleep">Sleep</Link>
+          <Link to="https://www.youtube.com/watch?v=N4nX_rTwKx4">Cosmic Chat</Link>
         </li>
         <li className="private-nav-item">
-          <Link to="/stress">Stress</Link>
+          <Link to="/personalized">Personalized Meditations</Link>
         </li>
         <li className="private-nav-item">
-          <Link to="/stress">Nature</Link>
+          <Link to="/community">Community</Link>
         </li>
       </ul>
     </nav>

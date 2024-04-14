@@ -1,5 +1,3 @@
-// PrivateAnalysis.js
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { db, collection, getDocs } from '../firebase'; // Update the import statements
@@ -27,9 +25,6 @@ const PrivateAnalysis = () => {
     fetchMeditations();
   }, []);
 
-
-
-
   const handleSearch = (e) => {
     // Perform live search based on the entered query
     setSearchQuery(e.target.value);
@@ -38,6 +33,9 @@ const PrivateAnalysis = () => {
   const filteredMeditations = meditations.filter(meditation =>
     meditation.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  // Hardcoded "My Stats" item
+  const myStatsItem = { name: "My Stats", id: "stats" };
 
   return (
     <div className='private-analysis'>
@@ -50,6 +48,11 @@ const PrivateAnalysis = () => {
         />
       </div>
       <ul>
+        <Link key={myStatsItem.id} to={`/stats`}>
+          <li className='stats'>
+            <p>{myStatsItem.name}</p>
+          </li>
+        </Link>
         {filteredMeditations.map(meditation => (
           <Link key={meditation.id} to={`/meditate/${meditation.id}`}>
             <li>

@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { auth } from '../firebase';
-import PrivateNavigation from './PrivateNavigation';
+import { auth, db, doc, getDoc, updateProfile } from '../firebase';
 import './PrivateDashboard.css';
 import { Link } from 'react-router-dom';
 
 const PrivateDashboard = () => {
   const [user, setUser] = useState(null);
+  const [profileImage, setProfileImage] = useState(null);
   const [greeting, setGreeting] = useState('');
-
+  const [newDisplayName, setNewDisplayName] = useState(''); // State to hold the new display name
+  
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+    const unsubscribe = auth.onAuthStateChanged(async (authUser) => {
       if (authUser) {
         setUser(authUser);
         updateGreeting();
+        await fetchProfileImage(authUser.uid);
       }
     });
 
@@ -20,6 +22,20 @@ const PrivateDashboard = () => {
       unsubscribe();
     };
   }, []);
+
+  const handleChangeProfileImage = () => {
+    // Logic to handle changing profile image
+  };
+
+  const handleChangeUsername = async () => {
+    try {
+      await updateProfile(auth.currentUser, { displayName: newDisplayName }); // Update display name in Firebase Authentication
+      setUser(auth.currentUser); // Update user object in state to reflect changes
+      setNewDisplayName(''); // Clear the input field
+    } catch (error) {
+      console.error('Error updating display name:', error);
+    }
+  };
 
   const updateGreeting = () => {
     const currentHour = new Date().getHours();
@@ -37,6 +53,19 @@ const PrivateDashboard = () => {
     auth.signOut();
   };
 
+  const fetchProfileImage = async (userId) => {
+    try {
+      const profileImageDoc = doc(db, 'profileImages', userId);
+      const profileImageSnapshot = await getDoc(profileImageDoc);
+      if (profileImageSnapshot.exists()) {
+        setProfileImage(profileImageSnapshot.data().imageUrl);
+      } else {
+      }
+    } catch (error) {
+      console.error('Error fetching profile image:', error);
+    }
+  };
+
   if (!user) {
     return <p>Loading...</p>;
   }
@@ -45,9 +74,15 @@ const PrivateDashboard = () => {
     <div className="private-dashboard">
       <h2>{`${greeting}, ${user.displayName || user.email}!`}</h2>
       <div className="button-list">
-        <Link to="/stats"><button> My Stats </button></Link>
-        <Link to='/personalized'><button>Personalized Meditations</button></Link>
-        <button onClick={handleLogout}>Logout</button>
+        <input
+          type="text"
+          placeholder="New Display Name"
+          value={newDisplayName}
+          onChange={(e) => setNewDisplayName(e.target.value)}
+        />
+        <button className="change-profile-image-button" onClick={handleChangeUsername}>Change Display Name</button>
+        <Link to="/my-posts"><button> My Posts </button></Link>
+        <Link to="/" onClick={handleLogout}><button>Logout</button></Link>
       </div>
     </div>
   );

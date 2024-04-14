@@ -122,3 +122,15 @@
 .private-dashboard button:hover {
     background-color: #f59551;
 }
+
+.private-dashboard input {
+    color: #000000;
+    background-color: #FDD7BD;
+    border: #e66910;
+    text-align: center;
+    outline: none;
+    width: 400px;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 50px;
+}

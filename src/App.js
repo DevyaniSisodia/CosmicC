@@ -18,8 +18,11 @@ import { auth } from './firebase';
 import StatsPage from './privateComponents/StatsPage';
 import Personalized from './privateComponents/Personalized';
 import PersonalizedList from './privateComponents/PersonalizedList'
-
-
+import Community from './privateComponents/Community';
+import ViewPost from './privateComponents/viewPost';
+import AddPost from './privateComponents/addPost'; 
+import MyPosts from './privateComponents/myPosts'; 
+import EditPost from './privateComponents/editPost';
 const App = () => {
   const [user] = useAuthState(auth);
 
@@ -35,16 +38,17 @@ const App = () => {
         <Route path="/signin" element={<SignIn />} />
         <Route
           path="/home"
-          element={user ? <PrivateDashboard /> : <Navigate to="/signup" />}
+          element={user ? <PrivateDashboard /> : <Navigate to="/home" />}
         />
         <Route
           path="/analysis"
-          element={user ? <PrivateAnalysis /> : <Navigate to="/signup" />}
+          element={user ? <PrivateAnalysis /> : <Navigate to="/analysis" />}
         />
         <Route path="/meditate/:id" element={<DetailedMeditation />} />
+        <Route path="/view-post/:postId" element={<ViewPost />} />
         <Route
           path="/stats"
-          element={user ? <StatsPage /> : <Navigate to="/signup" />}
+          element={user ? <StatsPage /> : <Navigate to="/stats" />}
         />
         <Route
           path="/personalized"
@@ -54,6 +58,23 @@ const App = () => {
           path="/personalized-list"
           element={user ? <PersonalizedList /> : <Navigate to="/personalized" />}
         />
+
+        <Route
+          path="/community"
+          element={user ? <Community /> : <Navigate to="/community" />}
+        />
+        <Route
+          path="/add-post"
+          element={user ? <AddPost /> : <Navigate to="/add-post" />}
+        />           
+        <Route
+          path="/my-posts"
+          element={user ? <MyPosts /> : <Navigate to="/my-posts" />}
+        />      
+        <Route
+          path="/edit-post/:postId"
+          element={user ? <EditPost /> : <Navigate to="/edit-post/:postId" />}
+        />       
       </Routes>
     </Router>
   );

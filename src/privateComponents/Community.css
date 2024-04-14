@@ -1,0 +1,66 @@
+
+.posts {
+    margin-top: 10%;
+}
+  .post {
+    border: black;
+    background-color: #ffceac;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    
+  }
+
+.searchBlack {
+    margin-left: 10px;
+}
+
+.searchBlack input::placeholder{
+    color: black;
+    border: black;
+  }
+
+
+.searchBlack input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    color: white;
+    width: 250px;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease;
+  }
+
+  .search input:focus {
+    color: black;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .post h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .post button {
+    background-color: #e66910;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post button:hover {
+    background-color: #ff9448;
+  }
+  
