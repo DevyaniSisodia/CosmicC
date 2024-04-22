@@ -59,6 +59,7 @@ const PrivateAnalysis = () => {
               <p>{meditation.name}</p>
               <p>Duration: {meditation.duration}</p>
               <p>Tag: {meditation.tag}</p>
+              <p>Views: {meditation.totalViews}</p>
             </li>
           </Link>
         ))}

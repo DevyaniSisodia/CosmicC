@@ -82,6 +82,7 @@ const PrivateDashboard = () => {
         />
         <button className="change-profile-image-button" onClick={handleChangeUsername}>Change Display Name</button>
         <Link to="/my-posts"><button> My Posts </button></Link>
+        <Link to="/history"><button> Past Meditations </button></Link>
         <Link to="/" onClick={handleLogout}><button>Logout</button></Link>
       </div>
     </div>

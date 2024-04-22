@@ -51,6 +51,7 @@ const SignUp = () => {
         Sessions: 0,
         Streak: 0,
         map: createMapData(),
+        list: [], 
       });
 
       // Add a document to Firestore in the 'form' collection

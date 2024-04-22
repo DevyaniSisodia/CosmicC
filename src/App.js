@@ -23,6 +23,9 @@ import ViewPost from './privateComponents/viewPost';
 import AddPost from './privateComponents/addPost'; 
 import MyPosts from './privateComponents/myPosts'; 
 import EditPost from './privateComponents/editPost';
+import LiveClasses from './privateComponents/LiveClasses';
+import History from './privateComponents/history';
+
 const App = () => {
   const [user] = useAuthState(auth);
 
@@ -74,7 +77,15 @@ const App = () => {
         <Route
           path="/edit-post/:postId"
           element={user ? <EditPost /> : <Navigate to="/edit-post/:postId" />}
-        />       
+        />  
+        <Route
+          path="/schedule"
+          element={user ? <LiveClasses /> : <Navigate to="/schedule" />}
+        /> 
+        <Route
+          path="/history"
+          element={user ? <History /> : <Navigate to="/history" />}
+        />
       </Routes>
     </Router>
   );

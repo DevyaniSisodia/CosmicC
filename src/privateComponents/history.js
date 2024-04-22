@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { collection, getDocs, query, where, doc, getDoc } from 'firebase/firestore';
 import { db, auth } from '../firebase'; // Adjust the path to your firebase.js file
-import './StatsPage.css';
+import './History.css';
 import { Link } from 'react-router-dom';
-import Heatmap from './Heatmap';
 
 const StatsPage = () => {
   const [streak, setStreak] = useState(0);
@@ -49,31 +48,22 @@ const StatsPage = () => {
   }, []); // Fetch the stats data only once when the component mounts
 
   return (
-    <div className='stats'>
-      <div className="stats-container">
-        <div className="stats-card">
-          <div className="stats-content">
-            <p>Cosmic Streak<br/><br/>{streak}</p>
-            <p>Cosmic Sessions<br/><br/>{sessions}</p>
-            <p>Cosmic Minutes<br/><br/>{minutes}</p>
-          </div>
-        </div>
-      </div>
-      <div className='heatmap'><Heatmap /></div>
-
-      {/* Display Past Meditations */}
-      <div className="past-meditations">
+    <div className='past'>
+      <div className="past-container">
         <h2>Past Meditations</h2>
         <ul>
+
           {pastMeditations.map((meditation) => (
              <Link key={meditation.id} to={`/meditate/${meditation.id}`}>
+             <div className="past-card">
             <li key={meditation.id}>
               <p>{meditation.name}</p>
             </li>
+            </div>
             </Link>
           ))}
         </ul>
-      </div>
+    </div>
     </div>
   );
 };

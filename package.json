@@ -4,12 +4,15 @@
   "private": true,
   "dependencies": {
     "@azure/storage-blob": "^12.17.0",
+    "@daily-co/daily-js": "^0.62.0",
+    "@daily-co/daily-react": "^0.18.0",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vimeo/vimeo": "github:vimeo/vimeo.js",
     "axios": "^1.6.7",
     "d3": "^7.8.5",
     "firebase": "^10.8.1",
@@ -20,6 +23,7 @@
     "react-router-dom": "^6.22.2",
     "react-scripts": "5.0.1",
     "react-tooltip": "^4.2.17",
+    "recoil": "^0.7.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

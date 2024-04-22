@@ -1,0 +1,53 @@
+.past {
+    background-color: #fdd7bd; /* Light peach */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+
+  li {
+    list-style-type: none;
+  }
+  .past-container {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+  .past-card {
+    background: linear-gradient(135deg, #ff991c, #ffbf71);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .past-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .past-card-link {
+
+    display: block;
+    text-decoration: none;
+    color: #070707; /* Black */
+  }
+  
+  .past-card-content {
+    padding: 20px;
+  }
+  
+  .past-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #070707; /* Black */
+  }
+  
+  .past-card p {
+    color: #000000; /* Dark gray */
+    margin-bottom: 15px;
+  }
+  

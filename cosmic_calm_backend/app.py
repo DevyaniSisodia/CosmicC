@@ -9,7 +9,6 @@ CORS(app)
 
 nlp = spacy.load("en_core_web_md")
 
-# Define the route to accept POST requests
 @app.route('/api/recommendations', methods=['POST'])
 def get_user_data():
     try:
